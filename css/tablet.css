@@ -1,0 +1,42 @@
+@media (max-width: 992px) {
+  /* css navbar */
+  #nav-name {
+    display: none;
+  }
+  /* css phần about */
+  #target {
+    padding: 60px 10px 60px 40px;
+    text-align: start;
+  }
+  #personal-info {
+    padding: 60px 10px 60px 40px;
+  }
+  /* css job info */
+  .hobbies {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* css phần certificate */
+  #certificate .item {
+    display: block;
+    height: fit-content;
+  }
+  #certificate .container {
+    padding: 50px 100px;
+  }
+  .cert-info {
+    margin-top: 10px;
+  }
+  /* css phần project */
+  #project .content {
+    gap: 10px;
+  }
+  td {
+    padding: 15px 5px 10px 5px;
+    vertical-align: top;
+  }
+  .role {
+    /* vertical-align: middle; */
+    align-items: flex-start;
+  }
+}

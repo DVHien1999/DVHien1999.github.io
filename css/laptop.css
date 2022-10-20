@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+i {
+  color: rgba(25, 156, 219);
+}
+.font-light {
+  color: rgb(110, 110, 110);
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+body {
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(110, 110, 110);
+}
+.section-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+/* css banner */
+#banner {
+  position: relative;
+  background: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+}
+#name {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 200px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#name h1 {
+  font-size: 60px;
+}
+#name span {
+  font-size: large;
+}
+
+/* __________________________________________________________________________ */
+/* CSS nav-bar */
+#nav-bar {
+  text-align: center;
+  height: fit-content;
+  line-height: normal;
+}
+.nav-bar-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+/* các mục của nav bar */
+.nav-bar-container .item {
+  border-left: 1px solid rgb(128, 128, 128, 0.15);
+  border-top: none;
+  border-bottom: none;
+  flex-basis: 150px;
+  height: 100%;
+  padding: 40px 0px;
+  font-size: 13px;
+}
+.nav-bar-container .item:last-child {
+  border-right: 1px solid rgb(128, 128, 128, 0.15);
+}
+/* mục name của nav bar */
+#nav-name {
+  width: 400px;
+  border-left: 1px solid rgb(128, 128, 128, 0.15);
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#nav-name p {
+  color: rgb(128, 128, 128, 0.4);
+}
+.nav-bar-container a {
+  flex-basis: 150px;
+}
+.nav-bar-container a:link {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar-container a:visited {
+  color: black;
+}
+/* __________________________________________________________________________ */
+/* CSS của about */
+/* #about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} */
+#target {
+  text-align: right;
+  padding: 90px 0px 100px 180px;
+}
+#personal-info {
+  width: 100%;
+  height: 100%;
+  /* justify-self: left; */
+  padding: 90px 0px 50px 40px;
+  background-color: rgba(240, 240, 240, 255);
+}
+/* #target .section-title,
+#personal-info .section-title {
+  
+} */
+.info {
+  padding-bottom: 10px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.info li {
+  padding-bottom: 13px;
+}
+/* div chứa icon của thông tin cá nhân */
+.more-info {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.error {
+  color: red;
+}
+/* __________________________________________________________________________ */
+/* CSS của job-info */
+
+#job-info {
+  margin: 40px 0px;
+}
+/* #job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 50px 100px;
+} */
+#job-info .item {
+  border: 2px solid rgba(128, 128, 128, 0.1);
+  padding: 50px 30px;
+  /* min-height: 600px; */
+  margin-bottom: 30px;
+}
+#job-info .item i {
+  color: rgba(110, 110, 110, 0.5);
+  font-size: 60px;
+  margin-right: 10px;
+}
+.job-content {
+  min-height: 350px;
+}
+.Viewmore {
+  background-color: #f5f6ba;
+  color: rgb(110, 110, 110);
+  border-radius: 40px;
+  width: 50%;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+/* CSS cho list cấp 1 */
+.bluedot {
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.bluedot p {
+  padding-left: 35px;
+  font-style: italic;
+  font-size: smaller;
+}
+.bluedot li::before {
+  content: '\2022';
+  /* margin: 0px 10px; */
+  color: rgba(25, 156, 219);
+  font-size: 30px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+/* List cấp 2 */
+.dash {
+  list-style-type: none;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  /* padding-inline-start: 0px; */
+}
+.dash li {
+  margin-left: 0px;
+  padding: 3px;
+}
+.dash li::before {
+  content: '-';
+  margin-right: 5px;
+  color: unset;
+  font-size: unset;
+}
+/* CSS cho ô skill */
+.skill {
+  margin-bottom: 20px;
+}
+.skill-level {
+  display: flex;
+  column-gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.blue-bar {
+  width: 50px;
+  border-bottom: 3px solid rgb(40, 162, 221);
+}
+.gray-bar {
+  width: 50px;
+  border-bottom: 2px solid rgba(243, 243, 243, 255);
+}
+/* CSS cho ô sở thích */
+.hobbies {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.hobby {
+  width: 100px;
+}
+.circle-border {
+  height: 50px;
+  width: 50px;
+  padding: 15px 0px;
+  border: 2px solid rgba(25, 156, 219);
+  border-radius: 50%;
+  text-align: center;
+  color: rgba(25, 156, 219);
+  margin-bottom: 20px;
+}
+/* CSS cho phần certificate */
+#certificate .container {
+  padding: 50px 100px;
+}
+#certificate .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+#certificate .content img {
+  height: 100%;
+  width: 220px;
+}
+#certificate .item {
+  /* border: 1px solid #d6c08d; */
+  display: flex;
+}
+.cert-info {
+  margin-left: 30px;
+}
+.cert-info ul {
+  padding-left: 0px;
+}
+.line {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: #d6c08d;
+}
+.left-border {
+  border-left: 1px solid #d6c08d;
+  padding-left: 20px;
+}
+/* CSS cho phần project */
+#project .container {
+  padding: 50px 100px;
+}
+#project .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+#project .item {
+  border: 2px solid rgba(128, 128, 128, 0.1);
+}
+td #project .item div {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.1);
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  min-height: 100px;
+}
+.role * {
+  margin-right: 5px;
+  /* vertical-align: middle; */
+}
+table {
+  border-collapse: collapse;
+}
+table :last-child {
+  border: none;
+}
+tr {
+  border-bottom: 2pt solid rgba(128, 128, 128, 0.1);
+}
+td {
+  padding: 15px 10px 10px 16px;
+  vertical-align: top;
+}
+#project img {
+  width: 100%;
+  border-bottom: 2pt solid rgba(128, 128, 128, 0.1);
+}
+#project i::before {
+  color: rgb(110, 110, 110);
+}
+/* CSS Footer */
+#footer .container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled::before {
+  font-size: 30px;
+}
+#footer a {
+  color: rgb(110, 110, 110);
+  text-decoration: none;
+}
+/* ETC */
+.center {
+  text-align: center;
+}
+.blue-bg {
+  background-color: rgba(25, 156, 219);
+  border-radius: 25px;
+  padding: 3px 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.uppercase {
+  text-transform: uppercase;
+  /* color: black; */
+}
+.bold {
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}

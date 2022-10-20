@@ -1,0 +1,72 @@
+@media (max-width: 576px) {
+  /* css phần nav-bar */
+  #nav-name {
+    display: none;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .nav-bar-container {
+    display: block;
+    text-align: start;
+    padding-left: 40px;
+  }
+  .nav-bar-container .item {
+    border: none;
+    padding: 20px 0px;
+  }
+  /* css phần about */
+  #target {
+    padding: 60px 10px 60px 40px;
+    text-align: start;
+  }
+  #personal-info {
+    padding: 60px 10px 60px 40px;
+  }
+  /* css phần job-info */
+  .title {
+    justify-content: center;
+    gap: 20px;
+  }
+  #job-info .item {
+    min-height: 200px;
+  }
+  .hobbies {
+    justify-content: center;
+  }
+  .Viewmore {
+    margin-left: 100px;
+  }
+  /* css phần certificate */
+  #certificate .content {
+    grid-template-columns: 1fr;
+  }
+  #certificate .item {
+    display: block;
+    height: fit-content;
+    border-bottom: 2px #d6c08d solid;
+  }
+  #certificate .content :last-child {
+    border: none;
+  }
+  #certificate .content img {
+    height: 100%;
+    width: 100%;
+  }
+  .cert-info {
+    margin-top: 10px;
+  }
+  .line {
+    display: none;
+  }
+  .left-border {
+    border-left: 0px solid #d6c08d;
+    padding-left: 0px;
+  }
+  /* css phần project */
+  #project .content {
+    grid-template-columns: 1fr;
+  }
+  .role {
+    align-items: flex-start;
+  }
+}
